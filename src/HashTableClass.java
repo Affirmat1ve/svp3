@@ -7,10 +7,10 @@ public class HashTableClass<K, V> {
     private ArrayList<LinkedListItem<K, V>> hashTable;
 
     private class LinkedListItem<K, V> {
-        public LinkedListItem<K, V> next;
-        public LinkedListItem<K, V> prev;
-        public K key;
-        public V value;
+        private LinkedListItem<K, V> next;
+        private LinkedListItem<K, V> prev;
+        private K key;
+        private V value;
 
         LinkedListItem(K key, V value) {
             this.key = key;
