@@ -26,11 +26,7 @@ public class HashMapClass implements java.util.Map {
     @Override
     public boolean containsKey(Object key) {
         if(key == null) {
-            if(nullKey) {
-                return true;
-            } else {
-                return false;
-            }
+            return nullKey;
         } else {
             if (hashMap.contains(key)) {
                 return true;
